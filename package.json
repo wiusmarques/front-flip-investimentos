@@ -1,0 +1,38 @@
+{
+  "name": "front-chaveiro-mineirao",
+  "version": "1.0.0",
+  "description": "Composer destinado ao site da empresa Chaveiro Mineirao",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiusmarquesdeveloper/front-chaveiro-mineirao.git"
+  },
+  "author": "Wiusmarques Moreira dos Reis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiusmarquesdeveloper/front-chaveiro-mineirao/issues"
+  },
+  "devDependencies": {
+    "fancy-log": "~1.3.3",
+    "gulp": "~4.0.0",
+    "gulp-clean-css": "~4.0.0",
+    "gulp-concat": "~2.6.1",
+    "gulp-connect": "~5.7.0",
+    "gulp-debug": "~4.0.0",
+    "gulp-foreach": "~0.1.0",
+    "gulp-hash-filename": "~2.0.1",
+    "gulp-image": "~4.4.1",
+    "gulp-inject-string": "~1.1.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-nunjucks-html": "~2.0.0",
+    "gulp-sass": "~4.0.2",
+    "gulp-watch": "~5.0.1"
+  },
+  "dependencies": {
+    "bootstrap-4-grid": "^2.4.1"
+  },
+  "homepage": "https://github.com/wiusmarquesdeveloper/front-chaveiro-mineirao#readme"
+}
