@@ -76,7 +76,7 @@ gulp.task('image', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('src/*.html', gulp.series(['nunjucks']));
+    gulp.watch('src/**/*.html', gulp.series(['nunjucks']));
     gulp.watch('src/assets/**/*.scss', gulp.series(['sass', 'sass-common']));
     gulp.watch('src/assets/**/*.js', gulp.series(['compress']));
 });
