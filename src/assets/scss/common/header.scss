@@ -5,16 +5,211 @@
             padding: 20px 0;
             background-color: rgba(255,255,255,0.1);
         }
+        &-desktop{
+            display: block;
+            @media screen and(max-width: 600px){
+                display: none;
+            }
+        }
         a{
             font-family: 'Poppins', sans-serif;
-            padding: 10px;
+            padding: 10px 25px;
             font-size: 16px;
             text-decoration: none;
-            color: rgba($color: #ffcb00, $alpha: 0.7);
-            text-transform: uppercase;
+            color: rgba($color: rgb(255, 208, 0), $alpha: 0.7);
+            //text-transform: uppercase;
             &:hover{
-                color: rgba($color: #ffcb00, $alpha: 1.0);
+                color: rgba($color: rgb(255, 208, 0), $alpha: 1.0);
             }
         }
     }
 }
+
+.menuToggle {
+    display: block;
+    position: fixed;
+    top: 100px;
+    left: 40px;
+  
+    z-index: 2;
+  
+    -webkit-user-select: none;
+    user-select: none;
+  
+    
+  }
+  
+  .header {
+    z-index: 2;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: top 0.5s;
+  
+    &-fixed {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  
+  
+    /* Mobile Style */
+  
+    &-mobile {
+      display: none;
+      background-color: #fffdfd;
+      @media screen and(max-width: 600px) {
+        display: flex;
+        &-content{
+          margin: auto 15px auto auto;
+        }
+      }
+    }
+  }
+  
+  .menuToggle input {
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+  
+    width: 56px;
+    height: 60px;
+    margin: -5px 0 0 -10px;
+  
+    position: absolute;
+  
+    opacity: 0; /* hide this */
+    z-index: 3; /* and place it over the hamburger */
+  }
+  
+  .menuToggle span {
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+  
+    background: rgb(255, 208, 0);
+    border-radius: 3px;
+  
+    z-index: 2;
+  
+    transform-origin: 4px 0px;
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      opacity 0.55s ease;
+  }
+  
+  .menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  
+  /* 
+     * Transform all the slices of hamburger
+     * into a crossmark.
+     */
+  .menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: rgb(255, 208, 0);
+  }
+  
+  /*
+     * But let's hide the middle one.
+     */
+  .menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /*
+     * Ohyeah and the last one should go the other direction
+     */
+  .menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  /*
+     * Make this absolute positioned
+     * at the top left of the screen
+     */
+  .menu {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: -130px 0 0 -50px;
+    padding: 50px 45px 1024px 45px;
+    padding-top: 135px;
+    border: none;
+    background: white;
+    white-space: nowrap;
+    border: 1px solid  #2b2f39;
+    @media screen and (max-width: 600px) {
+      display: block;
+      position: absolute;
+    }
+  
+    a {
+      display: block;
+      color: rgb(255, 208, 0);
+      text-decoration: none;
+      //text-transform: uppercase;
+    }
+  
+    &-item:hover {
+      color: black;
+    }
+  
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+  
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  
+  .menu li {
+    padding: 10px 0;
+    font-size: 23px;
+  }
+  
+  .menu{
+    background-color: #131722;
+    &-mobile{
+      &-social_content{
+        width: 100%;
+        height: 210px;
+        display: flex;
+      }
+  
+      &-social_icons{
+        display: flex;
+        margin: auto;
+        img{
+          padding: 3px;
+        }
+      }
+    }
+  }
+  
+  /*
+     * And let's slide it in from the left
+     */
+  .menuToggle input:checked ~ ul {
+    transform: none;
+  }

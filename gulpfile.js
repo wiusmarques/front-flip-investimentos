@@ -70,7 +70,7 @@ gulp.task('compress', function() {
 });
 
 gulp.task('image', function () {
-    return gulp.src('src/assets/img/*')
+    return gulp.src('src/assets/img/**/*')
         .pipe(image())
         .pipe(gulp.dest('dist/assets/img'));
 });
