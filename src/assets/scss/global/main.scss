@@ -1,0 +1,11 @@
+body,html{
+    background-color: $black;
+    font-family: $roboto,Helvetica,Arial,sans-serif;
+}
+
+a{
+    &:hover{
+        color: $white;
+        text-decoration: none;
+    }
+}

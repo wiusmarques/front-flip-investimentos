@@ -1,0 +1,34 @@
+.field{
+    &{
+        display: flex;
+    }
+    &>input{
+        appearance: none;
+        border: 1px solid transparent;
+        font-family: $roboto,Helvetica,Arial,sans-serif;
+        padding: 15px 0;
+        width: 84%;
+        
+    }
+    &>.icon{
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16%;
+    }
+}
+
+.field-lg{
+    &>input{
+        color: $gray-600;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        letter-spacing: 0;
+        font-weight: 400;
+        transition: 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+

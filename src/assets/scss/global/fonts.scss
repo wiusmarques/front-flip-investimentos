@@ -1,0 +1,9 @@
+@each $font in $fonts{
+	@font-face {
+		@each $prop, $value in $font{
+			#{$prop}: $value;
+		}
+	}
+}
+
+

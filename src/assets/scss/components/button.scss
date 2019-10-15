@@ -1,0 +1,57 @@
+.btn{
+    border-radius: 100px;
+    color: $white;
+    display: inline-block;
+    font-family: $roboto;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.03125rem;
+    user-select: none;
+    min-width: 160px;
+    outline: none;
+    border: 0;
+    transition: 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+    min-height: 69px;
+    height: 69px;
+    line-height: 69px;
+    padding: 0 30px;
+}
+
+.btn-lg{
+    font-size: 0.875rem;
+    min-width: 80px;
+    padding: 0 15px;
+    min-height: 32px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.btn-block{
+    display: block;
+    width: 100%;
+}
+
+.btn-link{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.btn-sucess{
+    &{
+        background-color: $green-200;
+    }
+    &:hover{
+        background-color: $green-100;
+    }
+}
+
+@each $color, $hex in $colors{
+    .btn-#{$color}{
+        background-color: $hex;
+    }
+}
+
+

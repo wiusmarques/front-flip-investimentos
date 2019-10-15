@@ -1,0 +1,37 @@
+{% extends "partials/layout.html" %}
+
+{% set page = "Login" %}
+{% set title = "Login" %}
+
+{% set description = "Esta é a Flip Investimentos" %}
+
+{% block content %}
+<main>
+    <div class="login">
+        <div class="login-box">
+            <div class="login-fields">
+                <div class="field field-lg">
+                    <div class="icon">
+                        <img src="/assets/images/icons/email.svg" width="24" alt="icon-email">
+                    </div>
+                    <input type="text" placeholder="meu@email.com">
+                </div>
+                <div class="field field-lg">
+                    <div class="icon">
+                        <img src="/assets/images/icons/padlock.svg" width="24" alt="icon-email">
+                    </div>
+                    <input type="password" placeholder="Senha">
+                </div>
+            </div>
+            <div style="margin-top: 16px;">
+                <a class="btn-link color-white" href="#">Esqueceu a senha?</a>
+                <a class="btn-link color-white" href="#">Ainda não sou cliente</a>
+            </div>
+            <div style="margin-top:16px;">
+                <a class="btn btn-sucess btn-block" href="#">Entrar</a>
+            </div>
+        </div>    
+    </div>
+</main>
+
+{% endblock %}

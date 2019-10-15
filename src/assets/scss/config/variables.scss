@@ -1,0 +1,80 @@
+// Colors
+
+$white: #ffffff;
+$black: #000000;
+$yellow: #ffc709;
+$blue-100: #3b69ff;
+$blue-200: #0038ee;
+$gray-100: #eeeeee;
+$gray-200: #f4f4f4;
+$gray-300: #ccc;
+$gray-400: #9ca6ac;
+$gray-500: #999;
+$gray-600: #9c9e9f;
+$gray-700: #3e3e3e;
+$gray-800: #212124;
+$gray-900: #1e1f21;
+$green-100: #00cf71;
+$green-200: #00B563;
+
+$colors: (
+    white: $white,
+    black: $black,
+    yellow: $yellow,
+    blue-100: $blue-100,
+    blue-200: $blue-200, 
+    gray-100: $gray-100,
+    gray-200: $blue-200,
+    gray-300: $gray-300,
+    gray-400: $gray-400,
+    gray-500: $gray-500,
+    gray-600: $gray-600,
+    gray-700: $gray-700,
+    gray-800: $gray-800,
+    gray-900: $gray-900,
+    green-100: $green-100,
+    green-200: $green-200,
+);
+
+$roboto: "Roboto";
+$robotoslab: "Roboto Slab";
+
+$roboto-regular: '/assets/fonts/roboto-regular.woff2';
+$roboto-bold: '/assets/fonts/roboto-bold.woff2';
+$robotoslab-regular: '/assets/fonts/robotoslab-regular.woff2';
+$robotoslab-bold: '/assets/fonts/robotoslab-bold.woff2';
+$fonts: (
+    (
+        font-family : $roboto,
+        font-weight: 400,
+        src : (
+                local('#{$roboto}'),
+                url('#{$roboto-regular}') format('woff2'),
+            ),
+    ),
+    (
+        font-family : $roboto,
+        font-weight : 700, 
+        src : (
+                local('#{$roboto}'),
+                url('#{$roboto-bold}') format('woff2'),
+            ),
+    ),
+    (
+        font-family : $robotoslab,
+        font-weight: 400,
+        src : (
+                local('#{$robotoslab}'),
+                url('#{$robotoslab-regular}') format('woff2'),
+            ),
+    ),
+    (
+        font-family : $robotoslab,
+        font-weight : 700,
+        src : (
+                local('#{$robotoslab}'),
+                url('#{$robotoslab-bold}') format('woff2')
+            ),
+    )
+);
+
