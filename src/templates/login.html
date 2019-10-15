@@ -6,32 +6,43 @@
 {% set description = "Esta é a Flip Investimentos" %}
 
 {% block content %}
-<main>
+<main class="{{page}}">
     <div class="login">
+        <div style="top:0;left:0;" class="position-absolute pt-16 px-24">
+            <a class="btn-icon" href="http://localhost:3000" aria-label="back">
+                <img width="24" class="lozad" data-src="/assets/images/icons/left-arrow.svg" alt="left-arrow">
+            </a>
+        </div>
         <div class="login-box">
-            <div class="login-fields">
-                <div class="field field-lg">
+            <div class="text-center">
+                <img class="lozad" width="130" data-src="/assets/images/logos/logo.svg" alt="logo">
+            </div>
+            <div class="login-fields mt-30">
+                <label class="field field-lg mb-0">
                     <div class="icon">
-                        <img src="/assets/images/icons/email.svg" width="24" alt="icon-email">
+                        <img class="lozad" data-src="/assets/images/icons/email.svg" width="24" alt="icon-email">
                     </div>
                     <input type="text" placeholder="meu@email.com">
-                </div>
-                <div class="field field-lg">
+                </label>
+                <label class="field field-lg mb-0">
                     <div class="icon">
-                        <img src="/assets/images/icons/padlock.svg" width="24" alt="icon-email">
+                        <img class="lozad" data-src="/assets/images/icons/padlock.svg" width="24" alt="icon-email">
                     </div>
                     <input type="password" placeholder="Senha">
-                </div>
+                </label>
             </div>
-            <div style="margin-top: 16px;">
-                <a class="btn-link color-white" href="#">Esqueceu a senha?</a>
-                <a class="btn-link color-white" href="#">Ainda não sou cliente</a>
+            <div class="login-links mt-16">
+                <a class="btn-link color-white" href="#modal-pass" data-toggle="modal">Esqueceu a senha?</a>
+                <a class="btn-link color-white" href="#modal-register" data-toggle="modal">Ainda não sou cliente</a>
             </div>
-            <div style="margin-top:16px;">
+            <div class="mt-16">
                 <a class="btn btn-sucess btn-block" href="#">Entrar</a>
             </div>
         </div>    
     </div>
 </main>
+
+{% include "./partials/modal-pass.html" %}
+{% include "./partials/modal-register.html" %}
 
 {% endblock %}

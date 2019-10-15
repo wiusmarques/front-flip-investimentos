@@ -5,13 +5,6 @@
         justify-content: space-between;
         padding: 12px 12px 0;
     }
-    &-mobile-menu-open{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 24px;
-        width: 24px;
-    }
 }
 
 @include media-breakpoint-up(lg) {

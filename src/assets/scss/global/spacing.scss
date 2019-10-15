@@ -1,0 +1,50 @@
+// Margin
+@for $i from 0 through $spacingRange {
+    .m-#{$i} { 
+        margin: $i + px !important;
+    }
+    .mx-#{$i},
+    .mr-#{$i}{
+        margin-right: $i + px !important;
+    }
+    .mx-#{$i},
+    .ml-#{$i}{
+        margin-left: $i + px !important;
+    }
+    .my-#{$i},
+    .mt-#{$i}{
+        margin-top: $i + px !important;
+    }
+    .my-#{$i},
+    .mb-#{$i}{
+        margin-bottom: $i + px !important;
+    }
+    
+}
+
+// Padding
+@for $i from 0 through $spacingRange {
+    .p-#{$i} { 
+        padding: $i + px !important;
+    }
+    .px-#{$i},
+    .pr-#{$i}{
+        padding-right: $i + px !important;
+    }
+    .px-#{$i},
+    .pl-#{$i}{
+        padding-left: $i + px !important;
+    }
+    .py-#{$i},
+    .pt-#{$i}{
+        padding-top: $i + px !important;
+    }
+    .py-#{$i},
+    .pb-#{$i}{
+        padding-bottom: $i + px !important;
+    }
+}
+
+.mx-auto{
+    margin: 0 auto !important;
+}

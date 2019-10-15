@@ -42,8 +42,10 @@ module.exports = {
         src: {
             custom: './src/assets/js/*.js',
             all: [
-                './node_modules/dom7/dist/dom7.min.js',
-                './node_modules/bootstrap/dist/js/bootstrap.min.js',
+                './src/assets/js/vendors/jquery.js',
+                './src/assets/js/vendors/lazyload.js',
+                './src/assets/js/vendors/bootstrap.js',
+                './src/assets/js/vendors/swiper.js',
                 './src/assets/js/*.js',
             ],
         },

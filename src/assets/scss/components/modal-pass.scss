@@ -1,0 +1,35 @@
+.modal-pass{
+    & .modal-dialog{
+        max-width: 100%;
+    }
+    & .modal-content{
+        background: linear-gradient($black,$gray-700);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+        height: 100vh;
+        max-width: 100%;
+    }
+    & .close{
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+    }
+    &-link{
+        color: $gray-800 !important;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        font-family: $roboto;
+    }
+}
+
+@media (max-width:480px){
+    .modal-pass{
+        &-link{
+            font-size: 1.5rem;
+        }
+    }
+}

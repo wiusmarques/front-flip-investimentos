@@ -1,7 +1,36 @@
-<aside id="sidenav" class="sidenav">
-    <nav>
-        <ul>
-            <li></li>
-        </ul>
-    </nav>
+{% set name = "sidenav" %}
+
+<aside class="{{name}} modal fade" id="{{name}}" tabindex="-1" role="dialog" aria-labelledby="{{name}}Label" aria-hidden="true">
+    <div class="modal-dialog m-0" role="document">
+      <div class="modal-content rounded-0">
+        <div class="modal-header border-0 rounded-0">
+            <div class="col-6">
+                <button type="button" class="close btn-block" data-dismiss="modal" aria-label="Close">
+                    <img width="14" class="lozad" data-src="/assets/images/icons/close.svg" alt="close">
+                </button>
+            </div>
+            <div class="col-6">
+                <a class="btn btn-lg btn-block color-black text-right pr-0" href="pages/login.html">Login</a>
+            </div>
+        </div>
+        <div class="modal-body mt-18 px-0">
+            <ul class="{{name}}-list list-unstyled mb-0">
+                <li>
+                    <a class="{{name}}-link py-12 px-28" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="{{name}}-link py-12 px-28" href="#">Planos</a>
+                </li>
+                <li>
+                    <a class="{{name}}-link py-12 px-28" href="#">Calculadora</a>
+                </li>
+                <li>
+                    <a class="{{name}}-link py-12 px-28" href="#">Blog</a>
+                </li>
+                <li>
+                    <a class="{{name}}-link py-12 px-28" href="#">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </aside>

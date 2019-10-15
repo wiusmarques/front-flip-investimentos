@@ -1,0 +1,29 @@
+{% set name = "modal-pass" %}
+
+<div class="{{name}} modal fade" id="{{name}}" tabindex="-1" role="dialog" aria-labelledby="{{name}}Label" aria-hidden="true">
+    <div class="modal-dialog m-0" role="document">
+        <div class="modal-content rounded-0">
+            <div style="top:0;left:0;" class="position-absolute pt-16 px-24">
+                <button type="button" class="close btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img width="24" class="lozad" data-src="/assets/images/icons/left-arrow.svg" alt="left-arrow">
+                </button>
+            </div>
+            <div class="login-box">
+                <div class="text-center">
+                    <p class="login-title color-white">Esqueceu a senha?</p>
+                </div>
+                <div class="login-fields mt-30">
+                    <label class="field field-lg mb-0">
+                        <div class="icon">
+                            <img class="lozad" data-src="/assets/images/icons/email.svg" width="24" alt="icon-email">
+                        </div>
+                        <input type="text" placeholder="meu@email.com">
+                    </label>
+                </div>
+                <div class="mt-16">
+                    <a class="btn btn-yellow btn-block color-black" href="#">Resetar</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

@@ -2,7 +2,8 @@
 
 $white: #ffffff;
 $black: #000000;
-$yellow: #ffc709;
+$yellow-100: #ffdb66;
+$yellow-200: #ffc709;
 $blue-100: #3b69ff;
 $blue-200: #0038ee;
 $gray-100: #eeeeee;
@@ -20,7 +21,8 @@ $green-200: #00B563;
 $colors: (
     white: $white,
     black: $black,
-    yellow: $yellow,
+    yellow-100: $yellow-100,
+    yellow-200: $yellow-200,
     blue-100: $blue-100,
     blue-200: $blue-200, 
     gray-100: $gray-100,
@@ -36,8 +38,13 @@ $colors: (
     green-200: $green-200,
 );
 
+// Fonts
+
 $roboto: "Roboto";
 $robotoslab: "Roboto Slab";
+
+$familyRoboto: $roboto,Helvetica,Arial,sans-serif;
+$familyRobotoslab: $robotoslab,Helvetica,Arial,sans-serif;
 
 $roboto-regular: '/assets/fonts/roboto-regular.woff2';
 $roboto-bold: '/assets/fonts/roboto-bold.woff2';
@@ -77,4 +84,8 @@ $fonts: (
             ),
     )
 );
+
+// Spacing
+
+$spacingRange: 50;
 

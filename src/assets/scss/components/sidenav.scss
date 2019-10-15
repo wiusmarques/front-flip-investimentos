@@ -1,0 +1,33 @@
+.sidenav{
+    & .modal-content{
+        overflow: auto;
+        height: 100vh;
+        max-width: 100%;
+    }
+    & .modal-header{
+        background-color: $yellow-200;
+        min-height: 56px;
+        padding: 15px 12px;
+    }
+    & .close{
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+    }
+    &-link{
+        color: $gray-800 !important;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        font-family: $roboto;
+    }
+}
+
+@media (max-width:480px){
+    .sidenav{
+        &-link{
+            font-size: 1.5rem;
+        }
+    }
+}
