@@ -6,7 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 const minify = require('gulp-minify');
 var nunjucks = require('gulp-nunjucks-html');
 var image = require('gulp-image');
-
+console.log('xupa meu pinto')
 //Register pages to copy files CSS and JS to HTML page
 
 gulp.task('connect', function () {
