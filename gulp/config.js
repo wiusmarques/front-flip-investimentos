@@ -1,4 +1,6 @@
 module.exports = {
+    // -------------------------------------------- sourcemaps
+    mapsPath: 'maps',
     // -------------------------------------------- autoprefixer
     autoprefixer: {
         opts: {
@@ -8,8 +10,8 @@ module.exports = {
     // --------------------------------------------- browsersync
     browsersync: {
         server: {
-            server: 'build',
-            index: 'pages/index.html',
+            server: 'build/',
+            index: 'index.html',
         },
         watch: [
             './src/assets/scss/*.scss',
@@ -29,7 +31,6 @@ module.exports = {
         },
         dest: './build/assets/css',
         concat: 'styles.min.css', 
-        mapsPath: 'maps',
         sass: {
             outputStyle: 'expanded',
         }, 
@@ -61,7 +62,7 @@ module.exports = {
             ],
             all: './src/templates/**/*.html',
         },
-        dest: 'build/pages',
+        dest: 'build',
         nunjunks: {
             searchPaths: ['src/templates/'],
         }
@@ -70,7 +71,26 @@ module.exports = {
     images: {
         src: 'src/assets/images/**/*',
         dest: 'build/assets/images',
-        newer: 'build/assets/images',
+    },
+    // --------------------------------------------- fonts
+    fonts: {
+        src: 'src/assets/fonts/*',
+        dest: 'build/assets/fonts',
+    },
+    // --------------------------------------------- deploy code
+    deployCode: {
+        src: 'build/*html',
+        dest: 'dist/pages',
+        if: {
+            css: '*.css',
+            js: '*.js',
+        }
+    },
+    // --------------------------------------------- deploy images
+    deployImages: {
+        src: 'build/assets/images/**/*',
+        dest: 'dist/assets/images',
+        newer: 'dist/assets/images',
         imagemin: {
             gifsicle: {
                 interlaced: true,
@@ -89,14 +109,9 @@ module.exports = {
             },
         }
     },
-    // --------------------------------------------- images
-    fonts: {
-        src: 'src/assets/fonts/*',
-        dest: 'build/assets/fonts',
+    // --------------------------------------------- deploy fonts
+    deployFonts: {
+        src: 'build/assets/fonts/*',
+        dest: 'dist/assets/fonts',
     },
-    // --------------------------------------------- dist
-    dist: {
-        src: 'build/**',
-        dest: 'dist/',
-    }
 }

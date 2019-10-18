@@ -9,7 +9,7 @@ module.exports = function(gulp, plugins){
                 .src(config.templates.src.pages)
                 .pipe(sourcemaps.init())
                 .pipe(nunjucks(config.templates.nunjunks))
-                .pipe(sourcemaps.write(config.styles.mapsPath))
+                .pipe(sourcemaps.write(config.mapsPath))
                 .pipe(gulp.dest(config.templates.dest))
                 
         return stream

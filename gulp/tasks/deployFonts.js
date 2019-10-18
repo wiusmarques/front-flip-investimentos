@@ -4,8 +4,8 @@ module.exports = function(gulp, plugins){
     return function(){
         var stream = 
             gulp
-                .src(config.dist.src)
-                .pipe(gulp.dest(config.dist.dest))
+                .src(config.deployFonts.src)
+                .pipe(gulp.dest(config.deployFonts.dest))
 
         return stream
     }

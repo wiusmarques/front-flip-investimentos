@@ -9,9 +9,7 @@ const config = require('../config'),
                 gulp
                     .src(config.scripts.src.all)
                     .pipe(sourcemaps.init())
-                    .pipe(uglify())
-                    .pipe(concat(config.scripts.concat))
-                    .pipe(sourcemaps.write(config.styles.mapsPath))
+                    .pipe(sourcemaps.write(config.mapsPath))
                     .pipe(gulp.dest(config.scripts.dest))
 
             return stream

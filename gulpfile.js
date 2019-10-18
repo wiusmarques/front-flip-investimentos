@@ -14,11 +14,18 @@ gulp.task('scripts', getTask('scripts'))
 gulp.task('templates', getTask('templates'))
 gulp.task('images', getTask('images'))
 gulp.task('fonts', getTask('fonts'))
-gulp.task('dist', getTask('dist'))
+gulp.task('deployCode', getTask('deployCode'))
+gulp.task('deployImages', getTask('deployImages'))
+gulp.task('deployFonts', getTask('deployFonts'))
 
  
-gulp.task('default', gulp.parallel(['sync','styles','scripts','templates','images','fonts']))
-gulp.task('build', gulp.series(['clean', 'dist']))
+gulp.task('default', gulp.series(
+  gulp.parallel(['styles','scripts','templates','images','fonts']), 'sync'
+))
+
+gulp.task('build', gulp.series(
+  'clean', gulp.parallel(['deployCode', 'deployImages', 'deployFonts'])
+))
 
 
 

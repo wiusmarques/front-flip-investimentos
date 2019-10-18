@@ -1,8 +1,6 @@
 const autoprefixer = require('autoprefixer'),
     config = require('../config'),
-    concat = require('gulp-concat'),
     comments = require('postcss-discard-comments'),
-    cssnano = require('cssnano'),
     plumber = require('gulp-plumber'),
     postcss = require('gulp-postcss'),
     sass = require('gulp-sass'),
@@ -21,13 +19,11 @@ module.exports = function(gulp, plugins){
             .pipe(postcss(
                     [
                         autoprefixer(config.autoprefixer.opts.browsers), 
-                        cssnano(), 
                         comments(config.styles.postcss)
                     ]
                 )
             )
-            .pipe(concat(config.styles.concat))
-            .pipe(sourcemaps.write(config.styles.mapsPath))
+            .pipe(sourcemaps.write(config.mapsPath))
             .pipe(gulp.dest(config.styles.dest))
 
         return stream

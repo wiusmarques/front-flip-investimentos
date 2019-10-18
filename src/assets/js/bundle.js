@@ -1,6 +1,8 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+    const observer = lozad()
+    observer.observe()
+})
 
-const observer = lozad()
-observer.observe()
 
 
   
