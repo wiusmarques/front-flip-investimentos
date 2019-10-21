@@ -1,0 +1,24 @@
+h2{
+    font-size: 2rem;
+}
+.title{
+    &{
+        font-family: $familyRobotoslab;
+        font-weight: 700;
+    }
+    &-lg{
+        @include media-breakpoint-up(lg){
+            font-size: 4rem;
+            max-width: 800px;
+        }
+    }
+}
+
+.text{
+    &{
+        font-size: 1.25rem;
+    }
+    &-lg{
+        font-size: 1.5rem;
+    }
+}

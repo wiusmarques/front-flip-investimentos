@@ -1,4 +1,3 @@
-// Modules 
 const gulp = require('gulp'),
       plugins		= require('gulp-load-plugins')(),
       config = require('./gulp/config')

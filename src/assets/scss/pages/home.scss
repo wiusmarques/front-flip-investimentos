@@ -1,0 +1,33 @@
+.banner-home{
+    &{
+        background-image: url(../images/banners/banner-home.jpg);
+        height: 500px;
+    }
+}
+.section-home{
+    &{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    @include media-breakpoint-up(lg){
+        &{
+            padding-top: 135px;
+            padding-bottom: 135px;
+        }
+        & p{
+            width: 70%;
+        }
+    }
+}   
+
+.home-companys{
+    &{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+}
+

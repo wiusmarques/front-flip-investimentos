@@ -12,14 +12,18 @@
 @import "global/spacing";
 
 // Components 
+@import "components/banner";
 @import "components/button";
 @import "components/dropdown";
 @import "components/field";
 @import "components/header";
 @import "components/sidenav";
+@import "components/slide";
+@import "components/text";
 @import "components/modal-pass";
 @import "components/modal-register";
 
 // Pages
+@import "pages/home";
 @import "pages/login";
 

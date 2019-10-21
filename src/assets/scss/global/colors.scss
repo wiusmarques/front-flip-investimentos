@@ -9,3 +9,9 @@
         color: $hex !important;
     }
 }
+
+@each $color, $hex in $colors{
+    .bg-#{$color}{
+        background-color: $hex !important;
+    }
+}

@@ -12,16 +12,12 @@
         overflow-x: hidden;
         overflow-y: auto;
         min-height: 100vh;
-        z-index: 2;
+        z-index: 10;
     }
     &-box{
         padding: 0 12px;
         max-width: 360px;
         width: 100%;
-    }
-    &-fields{
-        border-radius: 10px;
-        overflow: hidden;
     }
     &-links{
         font-size: 0.9375rem;

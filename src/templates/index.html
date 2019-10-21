@@ -6,7 +6,59 @@
 
 {% block content %}
 <main>
+    <section>
+        <div class="swiper-container slider-home">
+            <div class="swiper-wrapper">
+                {% for slide in range(0,3) %}
+                <div class="swiper-slide bg bg-shadow bg-shadow-inverse banner-home">
+                    <a href="#">
     
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>    
+    </section>
+    <section class="home-companys bg-black">
+        <a class="px-20 btn-opacity" href="#" target="_blank">
+            <img width="120"class="lozad" data-src="../assets/images/logos/apimec.svg">
+        </a>
+        <a class="px-20 btn-opacity"href="#" target="_blank">
+            <img width="160" class="lozad" data-src="../assets/images/logos/b3.svg">
+        </a>
+        <a class="px-20 btn-opacity" href="#" target="_blank">
+            <img width="160" class="lozad" data-src="../assets/images/logos/febraban.svg">
+        </a>
+    </section>
+    <section class="section-home bg-white">
+        <div class="container">
+            <h2 class="title title-lg color-black mb-12">Soluções inteligentes para sua liberdade financeira.</h2>
+            <p class="text text-lg">Nossa equipe possui formação no mercado financeiro, expertise na área de investimentos, know-haw de mercado, além conhecimentos técnicos práticos para te auxiliar a conquistar seus objetivos através do aprendizado e da melhor alocação de seus recursos financeiros dentro dos seus objetivos pessoais. </p>
+        </div>
+    </section>
+    <section class="section-home bg-black">
+        <div class="container">
+            <h2 class="title title-lg color-white mb-12">Diferencias</h2>
+            <p class="text text-lg color-white">Como consultoria independente, trabalhamos para melhor atendimento e rentabilidade de seus investimentos sem qualquer viés com alguma instituição financeira.</p>
+            <p class="text text-lg color-white">Acompanhamento, direcionamento e suporte  para suas dúvidas.</p>
+            <p class="text text-lg color-white">Conhecimento e expertise prática.</p>
+        </div>
+    </section>
+    <section class="section-home bg-white">
+        <div class="container">
+            <h2 class="title title-lg color-black mb-12">Contato</h2>
+            <div class="d-flex flex-lg-row flex-column">
+                <div>
+                    <a class="btn btn-yellow color-black" href="#">contato@flipinvestimentos.com.br</a>
+                </div>
+                <div>
+                    <a class="btn btn-yellow color-black" href="#">31 9 9263-2664</a> 
+                </div>
+            </div>
+        </div>
+    </section>
+   
 </main>
 
 {% endblock %}
