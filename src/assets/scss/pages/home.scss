@@ -9,6 +9,22 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+    & .title{
+        &{
+            position: relative;
+        }
+        &:after{
+            background-color: $yellow-200;
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            height: 5px;
+            width: 65px
+        }
+        
+    }
     
     @include media-breakpoint-up(lg){
         &{

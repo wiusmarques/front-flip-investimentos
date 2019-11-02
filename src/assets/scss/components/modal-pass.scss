@@ -23,12 +23,8 @@
         align-items: center;
         font-size: 2rem;
         font-family: $roboto;
-    }
-}
 
-@media (max-width:480px){
-    .modal-pass{
-        &-link{
+        @media (max-width:480px){
             font-size: 1.5rem;
         }
     }

@@ -1,49 +1,54 @@
-// Margin
-@for $i from 0 through $spacingRange {
-    .m-#{$i} { 
-        margin: $i + px !important;
+@mixin spacing($class,$prop){
+    @for $i from 0 through $spacingRange{
+        .#{$class}-#{$i} { 
+            #{$prop}: $i + px !important;
+        }
+        .#{$class}x-#{$i},
+        .#{$class}r-#{$i}{
+            #{$prop}-right: $i + px !important;
+        }
+        .#{$class}x-#{$i},
+        .#{$class}l-#{$i}{
+            #{$prop}-left: $i + px !important;
+        }
+        .#{$class}y-#{$i},
+        .#{$class}t-#{$i}{
+            #{$prop}-top: $i + px !important;
+        }
+        .#{$class}y-#{$i},
+        .#{$class}b-#{$i}{
+            #{$prop}-bottom: $i + px !important;
+        }
     }
-    .mx-#{$i},
-    .mr-#{$i}{
-        margin-right: $i + px !important;
+    @include media-breakpoint-up(lg){
+        @for $i from 0 through $spacingRange{
+            .#{$class}-lg-#{$i} { 
+                #{$prop}: $i + px !important;
+            }
+            .#{$class}x-lg-#{$i},
+            .#{$class}r-lg-#{$i}{
+                #{$prop}-right: $i + px !important;
+            }
+            .#{$class}x-lg-#{$i},
+            .#{$class}l-lg-#{$i}{
+                #{$prop}-left: $i + px !important;
+            }
+            .#{$class}y-lg-#{$i},
+            .#{$class}t-lg-#{$i}{
+                #{$prop}-top: $i + px !important;
+            }
+            .#{$class}y-lg-#{$i},
+            .#{$class}b-lg-#{$i}{
+                #{$prop}-bottom: $i + px !important;
+            }
+        }
     }
-    .mx-#{$i},
-    .ml-#{$i}{
-        margin-left: $i + px !important;
-    }
-    .my-#{$i},
-    .mt-#{$i}{
-        margin-top: $i + px !important;
-    }
-    .my-#{$i},
-    .mb-#{$i}{
-        margin-bottom: $i + px !important;
-    }
-    
 }
 
-// Padding
-@for $i from 0 through $spacingRange {
-    .p-#{$i} { 
-        padding: $i + px !important;
-    }
-    .px-#{$i},
-    .pr-#{$i}{
-        padding-right: $i + px !important;
-    }
-    .px-#{$i},
-    .pl-#{$i}{
-        padding-left: $i + px !important;
-    }
-    .py-#{$i},
-    .pt-#{$i}{
-        padding-top: $i + px !important;
-    }
-    .py-#{$i},
-    .pb-#{$i}{
-        padding-bottom: $i + px !important;
-    }
-}
+
+@include spacing('m','margin');
+
+@include spacing('p','padding');
 
 .mx-auto{
     margin: 0 auto !important;

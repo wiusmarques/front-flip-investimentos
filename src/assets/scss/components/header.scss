@@ -11,14 +11,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 12px 12px 0;
-    }
-}
 
-@include media-breakpoint-up(lg) {
-    .header{
-        &-navbar {
+        @include media-breakpoint-up(lg) {
             padding: 16px 24px 0;
         }
     }
 }
+
 

@@ -17,11 +17,8 @@
         margin: 0;
         opacity: 1;
     }
-}
-
-@media (max-width:480px){
-    .modal-register{
-        &-link{
+    &-link{
+        @media (max-width:480px){
             font-size: 1.5rem;
         }
     }
