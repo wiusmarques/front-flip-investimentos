@@ -10,9 +10,12 @@
         <div class="swiper-container slider-home">
             <div class="swiper-wrapper">
                 {% for slide in range(0,3) %}
-                <div class="swiper-slide bg bg-shadow bg-shadow-inverse banner-home">
+                <div class="swiper-slide">
                     <a href="#">
-    
+                        <div 
+                            class="bg bg-shadow bg-shadow-inverse banner" 
+                            style="background-image: url(../assets/images/banners/banner-home.jpg)">
+                        </div>
                     </a>
                 </div>
                 {% endfor %}
@@ -22,42 +25,71 @@
     </section>
     <section class="home-companys bg-black">
         <a class="px-20 btn-opacity" href="#" target="_blank">
-            <img width="120"class="lozad" data-src="../assets/images/logos/apimec.svg">
+            <img width="120"class="lozad" data-src="../assets/images/logos/apimec.svg" alt="logo-apimec">
         </a>
         <a class="px-20 btn-opacity"href="#" target="_blank">
-            <img width="160" class="lozad" data-src="../assets/images/logos/b3.svg">
+            <img width="160" class="lozad" data-src="../assets/images/logos/b3.svg" alt="logo-b3">
         </a>
         <a class="px-20 btn-opacity" href="#" target="_blank">
-            <img width="160" class="lozad" data-src="../assets/images/logos/febraban.svg">
+            <img width="160" class="lozad" data-src="../assets/images/logos/febraban.svg" alt="logo-febraban">
         </a>
     </section>
     <section class="section-home bg-white">
         <div class="container">
-            <h2 class="title title-lg color-black mb-30 pb-30">Soluções <span class="color-yellow-200">inteligentes</span> para sua liberdade financeira.</h2>
-            <p class="text text-lg">Nossa equipe possui formação no mercado financeiro, expertise na área de investimentos, know-haw de mercado, além conhecimentos técnicos práticos para te auxiliar a conquistar seus objetivos através do aprendizado e da melhor alocação de seus recursos financeiros dentro dos seus objetivos pessoais. </p>
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <h2 class="title title-lg title-border-bottom color-black mb-30 pb-30">Soluções 
+                        <span class="color-yellow-200">inteligentes</span> para sua liberdade financeira.
+                    </h2>
+                    <p class="text text-lg">Nossa equipe possui formação no mercado financeiro, expertise na área de investimentos, 
+                        know-haw de mercado, além conhecimentos técnicos práticos para te auxiliar a conquistar seus objetivos 
+                        através do aprendizado e da melhor alocação de seus recursos financeiros dentro dos seus objetivos pessoais. 
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="section-home bg-black">
         <div class="container">
-            <h2 class="title title-lg color-white mb-30 pb-30">Diferencias</h2>
-            <p class="text text-lg color-white">Como consultoria independente, trabalhamos para melhor atendimento e rentabilidade de seus investimentos sem qualquer viés com alguma instituição financeira.</p>
-            <p class="text text-lg color-white">Acompanhamento, direcionamento e suporte  para suas dúvidas.</p>
-            <p class="text text-lg color-white">Conhecimento e expertise prática.</p>
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <h2 class="title title-lg title-border-bottom color-white mb-30 pb-30">Diferencias</h2>
+                    <p class="text text-lg color-white">Como consultoria independente, trabalhamos para melhor atendimento e 
+                        rentabilidade de seus investimentos sem qualquer viés com alguma instituição financeira.
+                    </p>
+                    <p class="text text-lg color-white">Acompanhamento, direcionamento e suporte  para suas dúvidas.</p>
+                    <p class="text text-lg color-white">Conhecimento e expertise prática.</p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="section-home bg-gray-200">
         <div class="container">
-            <h2 class="title title-lg color-black mb-30 pb-30">Consultoria financeira</h2>
-            <p class="text text-lg color-black">Ajudamos você com seu planejamento financeiro, mostrando as soluções que vão fazer a diferença no seu futuro e auxiliando na aplicação na prática. Além disso, vamos te educar financeiramente mostrando o porque aqueles investimentos se encaixam em seus objetivos e por que certas decisões serão tomadas.</p>
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <h2 class="title title-lg title-border-bottom color-black mb-30 pb-30">Consultoria financeira</h2>
+                    <p class="text text-lg color-black">Ajudamos você com seu planejamento financeiro, mostrando as soluções que 
+                        vão fazer a diferença no seu futuro e auxiliando na aplicação na prática. Além disso, vamos te educar 
+                        financeiramente mostrando o porque aqueles investimentos se encaixam em seus objetivos e por que certas 
+                        decisões serão tomadas.</p>
+                </div>
+            </div>
+            
         </div>
     </section>
     <section class="section-home bg-white">
             <div class="container">
-                <h2 class="title title-lg color-black mb-30 pb-30">Treinamento</h2>
-                <p class="text text-lg color-black">Oferecemos treinamento e desenvolvimento de pessoas dentro das empresas, mostrando como os colaboradores podem se programar financeiramente com seus salários, diminuindo o stress e aumentando a produtividade. Quer saber como funciona? Entre em contato com a nossa equipe.</p>
+                <div class="row">
+                    <div class="col-lg-8 col-12">
+                        <h2 class="title title-lg title-border-bottom color-black mb-30 pb-30">Treinamento</h2>
+                        <p class="text text-lg color-black">Oferecemos treinamento e desenvolvimento de pessoas dentro das empresas, 
+                            mostrando como os colaboradores podem se programar financeiramente com seus salários, diminuindo o 
+                            stress e aumentando a produtividade. Quer saber como funciona? Entre em contato com a nossa equipe.
+                        </p>
+                    </div>
+                </div>
             </div>
     </section>
-   
 </main>
 
 {% endblock %}

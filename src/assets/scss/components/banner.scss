@@ -25,4 +25,14 @@
     }   
 }
 
+.banner{
+    &{
+        height: 500px;
+    }
+    &-box{
+        background-color: rgba(0,0,0,0.5);
+        padding: 30px;
+    }
+}
+
 

@@ -1,0 +1,35 @@
+{% extends "partials/layout.html" %}
+
+{% set page = "Blog" %}
+{% set title = "Blog" %}
+{% set description = "Esta é a Flip Investimentos" %}
+
+{% block content %}
+<main>
+    <section>
+        <div class="banner bg bg-shadow" style="background-image: url(../assets/images/banners/banner-home.jpg)">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-10 col-12">
+                        <div class="banner-box">
+                            <h1 class="color-white">Blog</h1>
+                            <h3 class="color-white">Confira as ultimas novidades sobre a Flip Investimentos.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+       </div>
+    </section>
+    <section class="pt-lg-96 pb-lg-8 pt-42 pb-22">
+        <div class="container">
+            <div class="row">
+                {% for card in range(0,6) %}
+                <div class="col-lg-4 col-md-6 col-12 mb-lg-40 mb-20">
+                    {% include "./partials/card-blog.html" %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "partials/layout.html" %}
+
+{% set page = "About" %}
+{% set title = "About" %}
+{% set description = "Esta é a Flip Investimentos" %}
+
+{% block content %}
+<main>
+   <section>
+       <div class="banner bg bg-shadow" style="background-image: url(../assets/images/banners/banner-home.jpg)">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-9 col-12">
+                        <div class="banner-box">
+                            <h1 class="color-white">Nascidos no Brasil</h1>
+                            <h3 class="color-white">Um pouco sobre a história da Flip Investimentos</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+       </div>
+   </section>
+   <section class="py-lg-96 py-48">
+       <div class="container">
+           <div class="row">
+               {% for article in range(0,2) %}
+               <div class="col-lg-6 col-12">
+                    <article class="single-post-content">
+                        <p class="text text-lg">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
+                            into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </article>
+               </div>
+               {% endfor %}
+           </div>
+       </div>
+   </section>
+</main>
+
+{% endblock %}

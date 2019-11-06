@@ -39,7 +39,6 @@
     }
 }
 
-
 .btn-icon{
     &{
         border-radius: 50%;
@@ -93,6 +92,25 @@
     &:hover{
         opacity: 1;
     }
+}
+
+.link{
+    &{
+        text-decoration: none;
+        padding-bottom: 6px;
+        display: inline;
+        cursor: pointer;
+        color: $gray-1000;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(transparent calc(100% - 1px), $yellow-100 5px);
+        background-position-y: -4px;
+    }
+    &:hover{
+        background-image: linear-gradient(transparent calc(100% - 2px), $yellow-100 5px);
+        color: $gray-1000;
+    }
+   
+    
 }
 
 @each $color, $hex in $colors{
