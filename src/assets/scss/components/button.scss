@@ -109,8 +109,6 @@
         background-image: linear-gradient(transparent calc(100% - 2px), $yellow-100 5px);
         color: $gray-1000;
     }
-   
-    
 }
 
 @each $color, $hex in $colors{

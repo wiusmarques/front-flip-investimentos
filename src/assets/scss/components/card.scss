@@ -55,3 +55,71 @@
         pointer-events:  auto;
     }
 }
+.card-goal{
+    &{
+        border: 1px solid $gray-100;
+        box-shadow: 0 1px 10px 0 rgba(5, 5, 5, 0.1);
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 32px;
+        overflow: hidden;
+        height: 328px;
+        @include media-breakpoint-up(lg){
+            height: 408px;
+        }
+    }
+    &-text{
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &-title{
+        color: $gray-600;
+        font-size: 0.75rem;
+        font-weight: 700;
+        @include media-breakpoint-up(lg){
+            font-size: 1rem;
+        }
+    }
+    &-action{
+        color: $gray-800;
+        font-size: 0.75rem;
+        font-weight: 400;
+        @include media-breakpoint-up(lg){
+            font-size: 1rem
+        }
+    }
+    &-value{
+        color: $green-200;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 29px;
+        @include media-breakpoint-up(lg){
+            font-size: 3rem;
+            line-height: 38px;
+        }
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-label{
+        color: $gray-600;
+        font-size: 1.125rem;
+        text-transform: initial;
+        @include media-breakpoint-up(lg){
+            font-size: 1.25rem;
+        }
+    }
+    &-description{
+        color: $gray-600;
+        font-size: .875rem;
+        text-transform: initial;
+        @include media-breakpoint-up(lg){
+            font-size: 1.5rem;
+        }
+    }
+}
