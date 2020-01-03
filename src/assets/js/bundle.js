@@ -14,29 +14,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
         loop: true
     })
     
-    const slidesGoals = []
-    for (let i=0; i<3; i++){
-        slidesGoals[i] = new Swiper ('.slider-goals-'+i, {
-            observer: true,
-            observerParents: true,
-            observeSlideChildren: true,
-            watchOverflow: true,
-            pagination: {
-                clickable: true,
-                el: '.swiper-pagination',
-                type: 'bullets',
+    slidesGoals = new Swiper ('.slider-goals', {
+        observer: true,
+        observerParents: true,
+        observeSlideChildren: true,
+        watchOverflow: true,
+        slidesPerView:3,
+        spaceBetween: 10,
+        pagination: {
+            clickable: true,
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        breakpoints:{
+            1200:{
+                slidesPerView:2,
+                spaceBetween: 10,
             },
-            breakpoints:{
-                1200:{
-                    slidesPerView:2,
-                    spaceBetween: 10,
-                },
-                768: {
-                    slidesPerView: 1,
-                }
+            768: {
+                slidesPerView: 1,
             }
-        })
-    }
+        }
+    })
+    
 })
 
 

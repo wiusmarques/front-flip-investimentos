@@ -1,7 +1,7 @@
 {% extends "partials/layout.html" %}
 
-{% set page = "Podcast" %}
-{% set title = "Podcast" %}
+{% set page = "My Wallet" %}
+{% set title = "My Wallet" %}
 {% set description = "Esta é a Flip Investimentos" %}
 
 {% block content %}
@@ -12,8 +12,8 @@
                 <div class="row align-items-center h-100">
                     <div class="col-lg-10 col-12">
                         <div class="banner-box">
-                            <h1 class="color-white">Podcast</h1>
-                            <h3 class="color-white">Confira podcasts sobre a Flip Investimentos.</h3>
+                            <h1 class="color-white">Sua carteira</h1>
+                            <h3 class="color-white">Confira a sua carteira da Flip investimentos.</h3>
                         </div>
                     </div>
                 </div>
@@ -23,10 +23,10 @@
     <section class="pt-lg-96 pt-42 pb-lg-69 pb-27">
         <div class="container">
             <div class="row">
-                {% for video in range(0,6) %}
-                <div class="col-sm-6 mb-10">
-                    {% include  'partials/card-audio.html' %}
-                </div>
+                {% for card in range(0,12) %}
+                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                        {% include './partials/card-wallet.html' %}
+                    </div>    
                 {% endfor %}
             </div>
         </div>

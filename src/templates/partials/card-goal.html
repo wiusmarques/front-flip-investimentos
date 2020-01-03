@@ -3,21 +3,16 @@
         <h2 class="card-goal-title card-goal-text">B3SA3</h2>
     </div>
     <div class="card-goal-body">
-            <p class="card-goal-action card-goal-text">Potencial Lucro</p>
-            <p class="card-goal-value card-goal-text">+21,00%</p>
+        <ul class="list-unstyled mb-0">
+            {% for item in range(0,3) %}
+            <li class="card-goal-item {% if item != 3 %} mb-5{% endif %}">
+                <p class="card-goal-label card-goal-text">Item {{ item }}</p>
+                <p class="card-goal-description card-goal-text">Texto {{ item }}</p>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
     <div class="card-goal-footer">
-        <div class="card-goal-item mb-5">
-            <p class="card-goal-label card-goal-text">Você ganha se o</p>
-            <p class="card-goal-description card-goal-text">Preco subir</p>
-        </div>
-        <div class="card-goal-item mb-5">
-            <p class="card-goal-label card-goal-text">Investir a partir de</p>
-            <p class="card-goal-description card-goal-text">R$ 4.980,00</p>
-        </div>
-        <div class="card-goal-item">
-            <p class="card-goal-label card-goal-text">Duração estimada</p>
-            <p class="card-goal-description card-goal-text">1 ano</p>
-        </div>
+        <button class="btn btn-block btn-yellow btn-xl">Quero comprar</button>
     </div>
 </div>

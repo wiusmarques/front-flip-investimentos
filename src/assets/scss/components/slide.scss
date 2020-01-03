@@ -16,3 +16,11 @@
         }
     }
 }
+
+.slider-goals{
+    @include media-breakpoint-up(xl){
+        & .swiper-slide-next{
+            zoom: 1.1;
+        }
+    }
+}

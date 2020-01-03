@@ -13,6 +13,9 @@
         position: absolute;
         left: 0;
         height: 237px;
+        @media (min-width:1500px){
+            height: 316px;
+        }
         width: 100%;
         z-index: 2;
     }

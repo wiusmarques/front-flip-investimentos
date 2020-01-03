@@ -23,41 +23,16 @@
     <section class="py-lg-96 py-50">
         <div class="container">
             <div class="row">
-                <div class="col-12 mb-lg-50 mb-40">
-                    <ul class="nav nav-tabs nav-tabs-custom" id="myTab" role="tablist">
-                        {% for tab in range(0,3) %}
-                        <li class="nav-item text-center mx-lg-8 mb-lg-0 mb-10">
-                            <a class="nav-link {% if tab == 0 %} active {% endif %}" id="tab-{{tab}}" data-toggle="tab" href="#tab-panel-{{tab}}" role="tab" aria-controls="tab-panel-{{tab}}" aria-selected="{% if tab == 0 %}true{% else %}false{% endif %}">Fundos Imobiliarios</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
                 <div class="col-12">
-                    <div class="tab-content" id="myTabContent">
-                        {% for tab in range(0,3) %}
-                        <div class="tab-pane fade {% if tab == 0 %}show active{% endif %}" id="tab-panel-{{tab}}" role="tabpanel" aria-labelledby="tab-{{tab}}">
-                            <div class="row">
-                                <div class="col-xl-7 col-12 mb-lg-0 mb-30">
-                                    <h2 class="title title-lg title-border-bottom color-black mb-30 pb-30">Fundos imobiliarios</h2>
-                                    <p class="text text-lg mb-0">São fundos que investem em ativos imobiliários, como por exemplo, Shoppings, Galpões 
-                                        Logísticos, Edifícios, CRIs e LCIs. Esses fundos distribuem aos cotistas regularmente os rendimentos obtidos.  
-                                    </p>
-                                </div>
-                                <div class="col-xl-5 col-12">
-                                    <div class="swiper-container slider-goals-{{tab}}">
-                                        <div class="swiper-wrapper">
-                                            {% for slide in range (0,3) %}
-                                            <div class="swiper-slide px-lg-10">
-                                                {% include "./partials/card-goal.html" %}
-                                            </div>
-                                            {% endfor %}
-                                        </div>
-                                        <div class="swiper-pagination position-static mt-15"></div>
-                                    </div>
-                                </div>
+                    <div class="swiper-container slider-goals">
+                        <div class="swiper-wrapper align-items-center">
+                            {% for slide in range (0,5) %}
+                            <div class="swiper-slide">
+                                {% include "./partials/card-goal.html" %}
                             </div>
+                            {% endfor %}
                         </div>
-                        {% endfor %}
+                        <div class="swiper-pagination position-static mt-15"></div>
                     </div>
                 </div>
             </div>
